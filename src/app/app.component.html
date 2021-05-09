@@ -1,0 +1,53 @@
+
+
+<div class="container mt-3">
+ 
+  <div class="row">
+    <div class="col-sm-2"></div>
+  <div draggable class="card col-sm-4"  style="width: 350px;height: 300px; border: 1px solid black;">
+    <div class="card-body">
+      <h3>I can be dragged anywhere</h3>
+    </div>
+  </div>
+
+
+  <div class="card col-sm-4 mx-5" draggable cdkDragLockAxis="x" cdkDrag style="width: 350px;height: 300px;border: 1px solid black;">
+    <div class="card-body">
+      <div> <h3>I can only be dragged horizantally x-axis</h3></div>
+     
+    </div>
+  </div>
+
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+  <div class="card col-sm-4 mt-5" style="width: 350px;height: 300px;border: 1px solid black;">
+    <div class="card-body">
+      <button draggable style="display:block; margin:auto; width: 100%; border-radius: 8px;"><h5>Drag here</h5></button>
+      <p style="display:block; margin:auto; width: 90%;" draggable class="m-3">
+        i have a scrollable content with a handle
+        x
+        x
+        x
+        You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.                                                                      
+      </p>
+    </div>
+  </div>
+
+  <div class="card col-sm-4 mt-5 mx-5" style="width: 350px;height: 300px;border: 1px solid black;">
+    <div class="card-body" cdkDragLockAxis="y" cdkDrag >
+      <div draggable> <button style="width: 100%; border-radius: 8px;"><h5>Can't drag here</h5></button> </div>
+      <div draggable class="card card-body mt-4">
+      <h3 >Dragging here works</h3>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+<router-outlet></router-outlet>
